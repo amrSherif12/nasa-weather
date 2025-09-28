@@ -1,0 +1,14 @@
+.leaflet-control-zoom a {
+  background-color: black !important;  
+  color: white !important;            
+  border: none !important;             
+}
+
+.leaflet-control-zoom a:hover {
+  background-color: #333 !important;
+}
+
+.leaflet-popup-content {
+  color: black;  
+  font-weight: 500; 
+}

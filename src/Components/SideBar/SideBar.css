@@ -1,0 +1,19 @@
+.sidebar {
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.sidebar__conditions {
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: start;
+}
+

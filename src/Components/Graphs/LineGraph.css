@@ -1,0 +1,79 @@
+
+/* Axis tick labels */
+.MuiChartsAxis-tickLabel {
+  fill: white !important;
+}
+
+/* Axis label (if used) */
+.MuiChartsAxis-label {
+  fill: white !important;
+}
+
+/* Legend text */
+.MuiChartsLegend-label {
+  fill: white !important;
+}
+
+/* Tooltip text */
+.MuiChartsTooltip-root {
+  color: white !important;
+}
+
+/* Axis lines */
+.MuiChartsAxis-line {
+  stroke: white !important;
+}
+
+/* Grid lines */
+.MuiChartsGrid-line {
+  stroke: white !important;
+}
+
+/* Series lines */
+.MuiChartsLine-root {
+  stroke: white !important;
+  stroke-width: 2px; /* optional: make lines thicker */
+}
+
+/* Crosshair / hover line */
+.MuiChartsCrosshair-root line {
+  stroke: white !important;       /* line color */
+  stroke-width: 1px !important;   /* line thickness */
+  stroke-dasharray: 4 4 !important; /* makes it dotted */
+}
+
+/* Optional: the dot on the hovered point */
+.MuiChartsCrosshair-dot {
+  fill: white !important;         /* dot color */
+  stroke: white !important;       /* dot border color */
+}
+
+.MuiChartsTooltip-root {
+  color: white !important;
+  background-color: #333 !important;
+}
+.MuiChartsLegend-label {
+  fill: white !important; /* series label in legend */
+}
+
+.MuiChartsTooltip-root {
+  color: black !important;       /* text color */
+  background-color: white !important; /* background of tooltip */
+  font-size: 12px;               /* optional */
+  border: 1px solid #ccc;        /* optional border */
+  border-radius: 4px;            /* optional rounded corners */
+}
+
+.MuiChartsTooltip-root,
+.MuiChartsTooltip-label,
+.MuiChartsTooltip-value {
+  color: black !important;        /* text color */
+  background-color: white !important;  /* tooltip background */
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  font-size: 12px !important;
+}
+
+.MuiChartsLegend-root {
+  display: none !important;
+}

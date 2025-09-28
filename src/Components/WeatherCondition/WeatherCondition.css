@@ -1,0 +1,41 @@
+.weather-condition {
+    display: flex;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.3); 
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 25px;
+    border-radius: 10px;
+    flex-direction: column;
+    height: calc(100vh / 3 - 40px);
+    justify-content: space-between;
+    max-width: 500px;
+    transition: all 200ms;
+    color: white;
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 5px 5px hsl(231, 100%, 85%);
+    }
+}
+.weather-condition__icon {
+  filter: brightness(0) invert(1);
+    height: 30px;
+}
+.weather-condition__data {
+    display: flex;
+    gap: 20px;
+}
+.weather-condition__title {
+    font-size: 22px;
+}
+.weather-condition__value {
+    font-size: 22px;
+}
+.weather-condition__description {
+    font-size: 18px;
+    opacity: 0.8;
+}
+.weather-condition__head {
+    display: flex;
+    gap: 20px;
+}
