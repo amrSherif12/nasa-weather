@@ -2,7 +2,7 @@ import "./MainContent.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function MainContent({ weather, onDateChange }) {
+export default function MainContent({ weather, onDateChange, selectedDay, selectedMonth }) {
   const [showPrompt, setShowPrompt] = useState(false);
   const [day, setDay] = useState("");
   const [month, setMonth] = useState("");
@@ -22,10 +22,15 @@ export default function MainContent({ weather, onDateChange }) {
       <div className="main-content__activities-section"></div>
 
       <div className="main-content__weather">
-        <span className="main-content__temp">{weather.Temperature_AVG.KDE}°</span>
+        <span className="main-content__temp">{weather.results.Temperature_AVG.KDE}°</span>
         <span className="main-content__weather-description">
-          {weather.Temperature_AVG.KDE < 10 ? "Snowy" : "Sunny"}
+          {weather.weather.weather}
         </span>
+        {(selectedDay && selectedMonth) && (
+          <span className="main-content__date-caption">
+            {String(selectedDay).padStart(2, '0')}/{String(selectedMonth).padStart(2, '0')}
+          </span>
+        )}
 
         <div className="main-content__buttons">
           <button

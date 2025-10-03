@@ -5,7 +5,7 @@ import "./LineGraph.css"
 
 
 export default function SimpleLineChart({ x, y, title }) {
-  return (
+    return (
     <div className="chart" style={{ width: '100%' }}>
       <h1 className="chart-title" style={{ color: 'white', fontSize: '25px', marginBottom: '16px', marginLeft: "45px" }}>{title.replace(/_/g, " ")
   .replace(/\b\w/g, char => char.toUpperCase())}</h1>

@@ -8,7 +8,7 @@
     border-radius: 10px;
     flex-direction: column;
     height: calc(100vh / 3 - 40px);
-    justify-content: space-between;
+    justify-content: space-evenly;
     max-width: 500px;
     transition: all 200ms;
     color: white;

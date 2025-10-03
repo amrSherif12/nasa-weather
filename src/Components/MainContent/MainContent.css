@@ -64,6 +64,11 @@
 .main-content__weather-description {
         font-size: 40px;
 }
+.main-content__date-caption {
+    margin-top: 6px;
+    font-size: 20px;
+    opacity: 0.9;
+}
 .main-content__threat {
     font-size: 20px;
     margin-bottom: 15px;
